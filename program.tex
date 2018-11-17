@@ -1,19 +1,23 @@
 \documentclass[letter,6pt,poets]{ConcProg}
 \usepackage{geometry}
-\geometry{scale=0.92}
+\geometry{scale=0.90}
 \usepackage{ctex}
 \usepackage[latin2]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{times}
 \usepackage{multicol}
-
+\usepackage{setspace} %行间距
 \newCJKfontfamily\mincho{IPAexMincho}
 
 \setlength{\parindent}{0pt}
 \setmainfont{Times New Roman}
 \setCJKfamilyfont{hwxk}{simkai}             %使用STXingkai华文行楷字体
 \newcommand{\ch1}{\CJKfamily{hwxk}}
+\pagestyle{empty}
+
 \begin{document}
+\pagestyle{empty}
+\begin{spacing}{1.1} %%行间距
 
 \begin{programme}{
     CFMO Concert
@@ -35,7 +39,7 @@
 }{}
      % \piece{Caro mio ben}             {}{}
     \end{composition}
-    \begin{composition}{Fan Guangzhi (范光治)} {}{On the river （江上）}{}
+    \begin{composition}{Fan Guangzhi (范光治)} {}{On the river （江上）, Excerpt}{}
       \piece{Dizi: Shen Hanwei, Piano: Su Xin}             {}{}
     \end{composition}
      \begin{composition}{} {}{（世间）}{}
@@ -70,7 +74,7 @@
      % \piece{Caro mio ben}             {}{}
     \end{composition}
     \begin{composition}{Huang Haihuai (黄海怀)\\ Arr. Chen Yanoxing (陈耀星),\  Chen Jun (陈军)}{}{Racing Horses  （赛马）}{}
-    \piece{Erhu:Li Wushuan, Tang Chenhao, Hu Chong, Liu Xuyao, Piano: Su xin}{}{}
+    \piece{Erhu:Li Wushuan, Tang Chenhao, Hu Chong, Liu Xuyao, Piano: Su Xin}{}{}
       %\piece{Caro mio ben}             {}{}
     \end{composition}\\
     \begin{composition}{Deng Yuxian (邓雨贤), Arr.\ Lan Hongwen (蓝洪文)}{}{Spring Breeze  （望春风）}{}
@@ -135,7 +139,6 @@
 \\
 
 \\
-
 Conducter: Su, Xin  (苏昕)
 \\
 \\
@@ -174,7 +177,7 @@ Yu Shuyuan   (于书源)\\
 Chen Zheming  (陈喆明)\\
 \\
 Keyboard (guest):\\
-Grace Chen
+Grace Chen (陈泓镔)
 \\
 \\
 Special Guest:\\
@@ -182,4 +185,5 @@ Leya Li (李彧慧)
  \small{ from \emph{ Dance of The Soul From China}}
 \\
 \end{multicols}
+\end{spacing}
 \end{document}
