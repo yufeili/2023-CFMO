@@ -1,6 +1,6 @@
 \documentclass[letter,6pt,poets]{ConcProg}
 \usepackage{geometry}
-\geometry{scale=0.8}
+\geometry{scale=0.92}
 \usepackage{ctex}
 \usepackage[latin2]{inputenc}
 \usepackage[T1]{fontenc}
@@ -10,6 +10,9 @@
 \newCJKfontfamily\mincho{IPAexMincho}
 
 \setlength{\parindent}{0pt}
+\setmainfont{Times New Roman}
+\setCJKfamilyfont{hwxk}{simkai}             %使用STXingkai华文行楷字体
+\newcommand{\ch1}{\CJKfamily{hwxk}}
 \begin{document}
 
 \begin{programme}{
@@ -18,7 +21,7 @@
 }
   \begin{part}[]
     \begin{composition}{He Zhaohao (何占豪), Chen Gang (陈刚) \\Arr. Zhu Changyao (朱昌耀)}{}{The Butterfly Lovers（梁祝), Excerpt}{}
-      \piece{Erhu: Hu, Chong, Piano: Su, Xin}{}{}
+      \piece{Erhu: Hu Chong, Piano: Su Xin}{}{}
      % \piece{Piano: Bob}{}{}
     \end{composition}
     
@@ -33,31 +36,32 @@
      % \piece{Caro mio ben}             {}{}
     \end{composition}
     \begin{composition}{Fan Guangzhi (范光治)} {}{On the river （江上）}{}
-      \piece{Dizi: Shen, Hanwei}             {}{}
+      \piece{Dizi: Shen Hanwei, Piano: Su Xin}             {}{}
+      \end{composition}
      \begin{composition}{} {}{（世间）}{}
       \piece{Dizi: Xiong Tianyu, Mo Xiaoting, Bao Teng, Kevin Gu, Shen Hanwei}             {}{}
     \end{composition}
     \end{composition}
     \begin{composition}{Wang Huiran (王惠然)}{}{Dance of Yi People  （彝族舞曲）}{}
-      \piece{Pipa:Shen, Tracy}             {}{}
+      \piece{Pipa:Tracy Shen}             {}{}
     \end{composition}
     \begin{composition}{Liu Tieshan (刘铁山), Mao Yuan (茅沅) \\Arr. Peng Xiuwen (彭修文)}{}{Dance of Yao People  （瑶族舞曲）}{}
     %  \piece{Caro mio ben}             {}{}
     \end{composition}
     \begin{composition}{}{}{Peacock Dance （孔雀舞） }{}
-     % \piece{Caro mio ben}             {}{}
+      \piece{Dance: Leya Li}             {}{}
     \end{composition}
     \begin{composition}{Ancient Piece, Recomposed by Lin Shicheng（林石城）}{}{Ten-Sided Ambush（十面埋伏）, Excerpt}{}
      \piece{Pipa: Sunia Cai}{}{}
      % \piece{Caro mio ben}             {}{}
     \end{composition}\\
     \begin{composition}{Fan Shang'e (范上娥), Kelsang Dakyi (格桑达吉)}{}{Spring of Snowy Mountain   （雪山春晓）}{}
-      \piece{Guzheng: Lu, Shiyu & Wang, Rachel}             {}{}
+      \piece{Guzheng: Lu Shiyu, Rachel Wang}             {}{}
     \end{composition}
     \begin{composition}{}{}{Three Inches of Paradise  （三寸天堂）}{}
      % \piece{Caro mio ben}             {}{}
     \end{composition}
-    \begin{composition}{Nie Ping (聂平)} {}{Dance of Golden Snake  （金蛇狂舞）}{}
+    \begin{composition}{Nie Er (聂耳)} {}{Dance of Golden Snake  （金蛇狂舞）}{}
      % \piece{Caro mio ben}             {}{}
     \end{composition}
     \begin{composition}{}{}{Kangding Love Song  （康定情歌）}{}
@@ -67,7 +71,7 @@
      % \piece{Caro mio ben}             {}{}
     \end{composition}
     \begin{composition}{Huang Haihuai (黄海怀)\\ Arr. Chen Yanoxing (陈耀星),\  Chen Jun (陈军)}{}{Racing Horses  （赛马）}{}
-    \piece{Erhu: Li, Wushuang}{}{}
+    \piece{Erhu:Li Wushuan, Tang Chenhao, Hu Chong, Liu Xuyao, Piano: Su xin}{}{}
       %\piece{Caro mio ben}             {}{}
     \end{composition}\\
     \begin{composition}{Deng Yuxian (邓雨贤), Arr.\ Lan Hongwen (蓝洪文)}{}{Spring Breeze  （望春风）}{}
@@ -76,8 +80,8 @@
     \begin{composition}{Weng Qingxi (翁清溪),\ Arr.\ Li Junping (黎俊平) }{}{The Moon Represents My Heart  （月亮代表我的心）}{}
     %  \piece{Caro mio ben}             {}{}
     \end{composition}
-    \begin{composition}{Joe Hisaishi (\mincho {久石譲})}{}{Innocent （\bm{\mincho{君をのせて}}） }{}
-      \piece{Erhu: Chenhao}             {}{}
+    \begin{composition}{Joe Hisaishi (\textbf{\mincho {久石譲})}}{}{Innocent （\bm{\mincho{君をのせて}}）, from Castle in the Sky }{}
+      \piece{Erhu: Tang Chenhao, Piano: Su Xin}             {}{}
     \end{composition}
     
     
@@ -116,13 +120,13 @@
 %      \piece{I hate music}           {}{Leonard Bernstein}
 %      \piece{A big Indian}           {}{Leonard Bernstein}
 %      \piece{I just found out today} {}{Leonard Bernstein}
-%    \end{composition}
+%    \end{composition}\kaishu
   \end{part}
   
   
 \end{programme}
 \begin{center}
-Roster
+\Large\textsl{ Roster}
 \end{center}
 
 \begin{multicols}{2}%第二段分两栏\\
@@ -132,42 +136,43 @@ Roster
 \\
 
 \\
+
 Conducter: Su, Xin  (苏昕)
 \\
 \\
  Erhu(二胡):                 \\
-Li, Wushuang (Mackenzie) (李无双)   \\
-Tang, Chenhao  (唐晨昊) \\
-Zhan, Kan (赵侃)\\
-Hu, Chong (胡翀)\\
-Li, Hairong (李海荣)\\
+Li Wushuang (Mackenzie) (李无双)   \\
+Tang Chenhao  (唐晨昊) \\
+Zhao Kan (赵侃)\\
+Hu Chong (胡翀)\\
+Li Hairong (李海荣)\\
 Darria Streeter\\
 \\
 Pipa(琵琶):\\
-Shen, Tracy(沈芳名)\\
-Cai, Sunia\\
+Shen Tracy(沈芳名)\\
+Cai Sunia\\
 
 \\
 Cello:\\
-Li, Yufei (李宇飞)\\
+Li Yufei (李宇飞)\\
 \\
 Double Bass (guest):\\
 Nicolas Young\\
 
 Dizi(笛子): 				 \\    
-Shen, Hanwei		(沈漢威)     \\
-Bao, Teng  (包腾)\\
-Gu, Kevin   (顾伟凡)               \\
-Xiong, Kyle (熊天宇)\\
-Hong, Ziyong (洪自勇)\\
-Mo, Xiaoting (莫小婷)\\
+Shen Hanwei		(沈漢威)     \\
+Bao Teng  (包腾)\\
+Gu Kevin   (顾伟凡)               \\
+Xiong Kyle (熊天宇)\\
+Hong Ziyong (洪自勇)\\
+Mo Xiaoting (莫小婷)\\
 \\
-Guzheng(古筝):\\
-Lu, Shiyu (卢诗妤)\\
-Liu, Xuyao  (刘旭瑶)\\               
-Wang, Rachel (王润琪) \\
-Yu, Shuyuan   (于书源)\\
-Chen, Zheming  (陈喆明)\\
+Guzheng({古筝}):\\
+Lu Shiyu (卢诗妤)\\
+Liu Xuyao  (刘旭瑶)\\               
+Wang Rachel (王润琪) \\
+Yu Shuyuan   (于书源)\\
+Chen Zheming  (陈喆明)\\
 \\
 Keyboard (guest):\\
 Grace Chen
